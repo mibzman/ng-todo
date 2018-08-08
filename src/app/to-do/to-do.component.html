@@ -4,13 +4,11 @@
 	<h1 class="ToDo-Header">Angular To Do</h1>
 	<div class="ToDo-Container">
 		<div class="ToDo-Content">
-			<ToDoItem
-			key={key}
-			item={item.todo}
-			deleteItem={this.deleteItem.bind(this, key)}
-			></ToDoItem>
+			<div *ngFor="let ToDo of ToDos" >
+				<ToDoItem [ToDo]="ToDo"></ToDoItem>
+			</div>
 		</div>
-		<input type="text" value={this.state.todo} onChange={this.handleInput} onKeyPress={this.handleKeyPress}/>
-		<div class="ToDo-Add" onClick={this.createNewToDoItem}>+</div>
+		<input type="text" />
+		<div class="ToDo-Add" >+</div>
 	</div>
 </div>

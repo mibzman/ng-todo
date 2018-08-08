@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ToDo } from "./to-do";
 
 @Component({
 	selector: "ToDo", // default:'app-to-do',
@@ -7,6 +8,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ToDoComponent implements OnInit {
 	constructor() {}
+
+	ToDos: ToDo[] = [new ToDo("clean the house"), new ToDo("buy milk")];
 
 	ngOnInit() {}
 }
