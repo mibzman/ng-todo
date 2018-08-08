@@ -12,4 +12,9 @@ export class ToDoComponent implements OnInit {
 	ToDos: ToDo[] = [new ToDo("clean the house"), new ToDo("buy milk")];
 
 	ngOnInit() {}
+
+	deleteItem(i: number) {
+		//note delete doesn't work: https://stackoverflow.com/a/40462431/2653503
+		this.ToDos.splice(i, 1);
+	}
 }
