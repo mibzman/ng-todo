@@ -34,7 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  /*padding: 15px;*/
   cursor: pointer;
   background: #73ff73;
   border-radius: 10px;
