@@ -11,7 +11,9 @@ export class ToDoComponent implements OnInit {
 
 	ToDos: ToDo[] = [new ToDo("clean the house"), new ToDo("buy milk")];
 
-	Input: string;
+	Input: string = "";
+
+	Submitted: boolean = false;
 
 	ngOnInit() {}
 
@@ -21,8 +23,22 @@ export class ToDoComponent implements OnInit {
 	}
 
 	addItem() {
-		console.log(this.ToDos);
+		this.Submitted = true;
+		if (this.Input == "") {
+			return;
+		}
 		this.ToDos = this.ToDos.concat(new ToDo(this.Input));
-		console.log(this.ToDos);
+	}
+
+	ShouldBeHidden(
+		Valid: boolean,
+		Pristine: boolean,
+		Submitted: boolean
+	): boolean {
+		if (Submitted) {
+			return Valid;
+		} else {
+			return Valid || Pristine;
+		}
 	}
 }

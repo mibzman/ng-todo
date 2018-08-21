@@ -7,18 +7,19 @@
 				<ToDoItem [ToDo]="ToDo" (Deleted)="deleteItem(i)"></ToDoItem>
 			</div>
 		</div>
-
+		<!-- see https://stackblitz.com/angular/lypmnogevxa?file=src%2Fapp%2Fhero-form%2Fhero-form.component.html for a more in depth ng-form example -->
 		<form (ngSubmit)="addItem()" #todoForm="ngForm">
 			<div class="form-group">
-				<input type="text" required
-				[(ngModel)]="Input" name="Input"
+				<input type="text" class="form-control" id="name"
+				required
+				[(ngModel)]="Input" name="name"
 				#name="ngModel">
-				<!-- <div [hidden]="Input.valid "
-					class="alert alert-danger">
+				<div [hidden]="ShouldBeHidden(name.valid, name.pristine, Submitted)"
+					>
 					Name is required
-				</div> -->
+				</div>
 			</div>
-			<button type="submit"  [disabled]="!todoForm.form.valid" class="ToDo-Add" >+</button>
+			<button type="submit" class="ToDo-Add" >+</button>
 		</form>
 	</div>
 </div>
