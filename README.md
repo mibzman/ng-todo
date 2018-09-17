@@ -23,7 +23,7 @@ Run `ng serve` for a **dev server**. Navigate to [lohalhost:4200](http://localho
 ## Build
 
 | Run  | to   |
-| :---:| :---:|
+| :---| :---|
 |  `ng build`  | build the project in development build |
 |  `ng build --prod` | build the project in production build |
 The build artifacts will be stored in the `dist/` directory.
@@ -31,18 +31,18 @@ The build artifacts will be stored in the `dist/` directory.
 ## Running unit tests
 
 | Run  | to   |
-| :---:| :---:|
+| :---| :---|
 |  `ng test`  | execute the unit tests via [Karma](https://karma-runner.github.io) |
 
 ## Running end-to-end tests
 
 | Run  | to   |
-| :---:| :---:|
+| :---| :---|
 |  `ng e2e`  | execute the end-to-end tests via [Protractor](http://www.protractortest.org/). |
 
 ## Further help
 
 | Run  | to   |
-| :---:| :---:|
+| :---| :---|
 |  `ng help`  | get more help on the Angular CLI |
 Or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
