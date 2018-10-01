@@ -2,6 +2,13 @@
 
 Todo App made with **_Angular_**
 
+## Contributors
+
+[Sam Borick](https://github.com/mibzman)
+[Tyler Mendes de Brito](https://github.com/tylerbryto)
+[Sunil Sandhu](https://github.com/sunil-sandhu)
+
+
 ## Development server
 
 Run `ng serve` for a **dev server**. Navigate to [lohalhost:4200](http://localhost:4200/). The app will **automatically reload** if you change any of the source files.
